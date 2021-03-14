@@ -1,5 +1,5 @@
 exports.config = {
-  output: './output',
+  output: './allure-results',
   helpers: {
     Puppeteer: {
       url: 'https://www.saucedemo.com',
@@ -9,7 +9,8 @@ exports.config = {
       chrome: {
         args: [
           '--start-maximized',
-          'no-sandbox'
+          'no-sandbox',
+          '--headless'
         ]
       }
     },
