@@ -1,0 +1,21 @@
+{
+  "name": "Tute",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx codeceptjs run --features",
+    "test:smoke": "npx codeceptjs run --features --grep @smoke",
+    "test:parallel": "npx codeceptjs run-workers 2 --features"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs": "^3.0.5",
+    "puppeteer": "^7.1.0"
+  },
+  "dependencies": {
+    "codeceptjs-assert": "0.0.5"
+  }
+}
